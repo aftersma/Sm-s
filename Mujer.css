@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    text-shadow: 0 3px 3px rgb(22, 22, 22);
+    font-size: 1.5em;
+}
+
+h2{
+    color: white;
+    text-shadow: 0 3px 3px rgb(22, 22, 22);
+
+}
+
+/* cfg Heredada*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #f0e5e3;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.75em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blue;
+}
+
+/* Parte de productos */
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/*Cuadricula de productos*/
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.items{
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.items:hover{
+    box-shadow: 0 10px 20px rgb(128, 128, 128);
+}
+
+.info-product{
+    padding: 15px 30px;
+    align-items: end;
+}
+
+/*Pie de pagina*/
+footer{
+    background-color: rgb(30, 30, 30); 
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(90, 90, 90);
+}
+
+footer .container{
+    height: 150px ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*MEDIA*/
+@media(min-width: 720px){
+    header{
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 50px;
+    }
+    
+    #tipos-de-ropa .tipos{
+        display: flex;
+        justify-content: center;
+    }
+}
